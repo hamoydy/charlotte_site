@@ -19,10 +19,25 @@
     </header>
 
     <!-- Section À propos -->
+<!--     <section id="about">
+        <h2>À propos</h2>
+        <div class="about-container">
+            <img src="images/architecte.jpg" alt="Photo de l'architecte" class="about-photo">
+            <div class="about-text">
+                <p>Charlotte Meier est une architecte passionnée par la création d'espaces fonctionnels et esthétiques. Avec plusieurs années d'expérience, elle combine créativité et expertise technique pour donner vie à des projets uniques, adaptés aux besoins de ses clients.</p>
+            </div>
+        </div>
+    </section>    --> 
     <section id="about">
         <h2>À propos</h2>
-        <p>Quelques mots sur l'architecte, son parcours, ses passions et sa vision.</p>
+        <div class="about-container">
+            <img src="images\photo_architect.jpg" alt="Photo de l'architecte" class="about-photo">
+            <div class="about-text">
+                <p>Architecte DEA fraichement diplomée de l'ENSAM Marseille, je suis passionnée par le suivi de chantier, l'urbanisme et la conception de projets de logements sociaux. Je maîtrise la création de plans 3D sur ArchiCAD et je réalise aussi tous types de plans avec précision et créativité pour répondre à vos besoins.</p>
+            </div>
+        </div>
     </section>
+    
 
     <!-- Section Projets -->
     <section id="projects">
@@ -31,6 +46,7 @@
             <img src="images/projet1.jpg" alt="Image de projet 1">
             <h3>Projet 1</h3>
             <p>Description courte du projet.</p>
+            <p><a href="docs/portfolio.pdf" download="Portfolio_Architecte">Télécharger mon portfolio (PDF)</a></p>
         </div>
         <!-- Ajouter plus de projets ici -->
     </section>
@@ -39,14 +55,23 @@
     <section id="contact">
         <h2>Contact</h2>
         <p>Contactez-moi pour des projets, des collaborations, ou des questions.</p>
-        <form>
-            <input type="text" placeholder="Nom" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Message" required></textarea>
+        <form action="https://getform.io/f/arooyjvb" method="POST">
+            <input type="text" name="name" placeholder="Nom" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <input type="hidden" name="_gotcha" style="display:none !important">
             <button type="submit">Envoyer</button>
         </form>
-    </section>
-
+        
+        
+    </section> 
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            emailjs.init("ZVC8euBjSuWAosNnv"); // Assure-toi que cet ID est correct
+        });
+    </script>
     <script src="script.js"></script>
+    
 </body>
 </html>

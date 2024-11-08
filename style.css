@@ -37,6 +37,41 @@ section {
     max-width: 800px;
 }
 
+/* Style de la section "À propos" */
+#about {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Conteneur pour la disposition en deux colonnes */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espace entre l'image et le texte */
+}
+
+/* Styles pour l'image */
+.about-photo {
+    width: 200px; /* Ajuste la taille de l'image si nécessaire */
+    height: auto;
+    border-radius: 10px; /* Coins arrondis pour un aspect plus doux */
+}
+
+/* Styles pour le texte */
+.about-text {
+    flex: 1; /* Prend tout l'espace restant */
+}
+
+/* Styles pour les écrans mobiles */
+@media (max-width: 600px) {
+    .about-container {
+        flex-direction: column; /* Passe l'image au-dessus du texte sur petits écrans */
+        text-align: center;
+    }
+}
+
+
 /* Projets */
 .project {
     background-color: #fff;
