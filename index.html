@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meier Architecte</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Charlotte Meier - Architecte DEA</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- En-tête (Header) -->
     <header>
-        <h1>MEIER Charlotte</h1>
+        <h1>Charlotte Meier</h1>
         <nav>
             <a href="#about">À propos</a>
             <a href="#projects">Projets</a>
@@ -18,60 +16,40 @@
         </nav>
     </header>
 
-    <!-- Section À propos -->
-<!--     <section id="about">
-        <h2>À propos</h2>
-        <div class="about-container">
-            <img src="images/architecte.jpg" alt="Photo de l'architecte" class="about-photo">
-            <div class="about-text">
-                <p>Charlotte Meier est une architecte passionnée par la création d'espaces fonctionnels et esthétiques. Avec plusieurs années d'expérience, elle combine créativité et expertise technique pour donner vie à des projets uniques, adaptés aux besoins de ses clients.</p>
-            </div>
-        </div>
-    </section>    --> 
-    <section id="about">
-        <h2>À propos</h2>
-        <div class="about-container">
-            <img src="images\photo_architect.jpg" alt="Photo de l'architecte" class="about-photo">
-            <div class="about-text">
-                <p>Architecte DEA fraichement diplomée de l'ENSAM Marseille, je suis passionnée par le suivi de chantier, l'urbanisme et la conception de projets de logements sociaux. Je maîtrise la création de plans 3D sur ArchiCAD et je réalise aussi tous types de plans avec précision et créativité pour répondre à vos besoins.</p>
-            </div>
-        </div>
+    <!-- Section d'Introduction -->
+    <section id="intro">
+        <h2>Bienvenue sur le site de Charlotte Meier, Architecte DEA</h2>
+        <p>Spécialisée dans la conception de projets architecturaux, le suivi de chantier et les permis de construire, je travaille aussi bien avec des architectes que des particuliers pour donner vie à vos projets.</p>
+        <a href="#contact" class="btn">Contactez-moi</a>
     </section>
-    
 
     <!-- Section Projets -->
     <section id="projects">
-        <h2>Projets</h2>
-        <div class="project">
-            <img src="images/projet1.jpg" alt="Image de projet 1">
-            <h3>Projet 1</h3>
-            <p>Description courte du projet.</p>
-            <p><a href="docs/portfolio.pdf" download="Portfolio_Architecte">Télécharger mon portfolio (PDF)</a></p>
+        <h2>Projets réalisés</h2>
+        <div class="project-gallery">
+            <!-- Exemple de projet -->
+            <div class="project">
+                <img src="images/projet1.jpg" alt="Projet 1">
+                <p>Description du projet 1</p>
+            </div>
+            <!-- Ajouter d'autres projets ici -->
         </div>
-        <!-- Ajouter plus de projets ici -->
     </section>
 
     <!-- Section Contact -->
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Contactez-moi pour des projets, des collaborations, ou des questions.</p>
-        <form action="https://getform.io/f/arooyjvb" method="POST">
-            <input type="text" name="name" placeholder="Nom" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <textarea name="message" placeholder="Message" required></textarea>
-            <input type="hidden" name="_gotcha" style="display:none !important">
+        <h2>Contactez-moi</h2>
+        <p>Pour toute demande de renseignements ou pour travailler ensemble sur un projet, n'hésitez pas à me contacter via le formulaire ci-dessous :</p>
+        <form action="contact_form.php" method="POST">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" placeholder="Votre message" required></textarea>
             <button type="submit">Envoyer</button>
         </form>
-        
-        
-    </section> 
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
-        document.addEventListener("DOMContentLoaded", function() {
-            emailjs.init("ZVC8euBjSuWAosNnv"); // Assure-toi que cet ID est correct
-        });
-    </script>
-    <script src="script.js"></script>
-    
+    </section>
+
+    <footer>
+        <p>© 2025 Charlotte Meier - Architecte DEA</p>
+    </footer>
 </body>
 </html>
