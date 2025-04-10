@@ -2,7 +2,7 @@ import streamlit as st
 import os
 
 # Lire le contenu de ton fichier index.html
-with open(os.path.join('chemin/vers/ton/fichier', 'index.html'), 'r') as f:
+with open(os.path.join('index.html'), 'r') as f:
     html_content = f.read()
 
 # Afficher le contenu HTML dans Streamlit
